@@ -1,0 +1,16 @@
+package ${package}.core.dto;
+
+import lombok.Data;
+import ${package}.core.entity.${className};
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Data
+public class ${className}Dto extends ${className} {
+
+}
