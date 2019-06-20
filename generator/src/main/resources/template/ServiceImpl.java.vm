@@ -12,7 +12,6 @@ import ${package}.${moduleName}.service.${className}Service;
  * ${comments}
  *
  * @author ${author}
- * @email ${email}
  * @date ${datetime}
  */
 @Service("${classname}Service")

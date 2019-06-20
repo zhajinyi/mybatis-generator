@@ -1,16 +1,32 @@
 package ${package}.core.dto;
 
+import java.util.Date;
+
+#if(${hasBigDecimal})
+import java.math.BigDecimal;
+#end
+
 import lombok.Data;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import ${package}.core.entity.${className};
 
 /**
  * ${comments}
  *
  * @author ${author}
- * @email ${email}
  * @date ${datetime}
  */
 @Data
+@NoArgsConstructor
+@TableName("${tableName}")
 public class ${className}Dto extends ${className} {
+
+    @Builder
+    public ${className}Dto (#foreach($column in $columns)$column.attrType $column.attrname#if($!{foreach.index} <
+        $!{columns.size()} - 1), #end#end) {
+        super(#foreach ($column in $columns)$column.attrname#if($!{foreach.index} <
+    $!{columns.size()} - 1), #end#end);
+    }
 
 }

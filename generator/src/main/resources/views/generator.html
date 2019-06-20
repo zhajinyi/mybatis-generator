@@ -21,7 +21,8 @@
 <div id="rrapp">
 	<div class="grid-btn">
 		<div class="form-group col-sm-2">
-			<input type="text" class="form-control" v-model="q.packageName" placeholder="包名">
+			<input type="radio" v-model="q.packageName" value="chat" >chat
+			<input type="radio" v-model="q.packageName" value="community">community
 		</div>
 	</div>
 
