@@ -1,5 +1,6 @@
 package ${package}.core.dto;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import java.util.Date;
 
 #if(${hasBigDecimal})

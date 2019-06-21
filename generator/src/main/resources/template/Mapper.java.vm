@@ -1,4 +1,4 @@
-package ${package}.core.dao;
+package ${package}.core.mapper;
 
 import ${package}.core.dto.${className}Dto;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
