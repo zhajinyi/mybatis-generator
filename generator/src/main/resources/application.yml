@@ -7,7 +7,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     #MySQL配置
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/nupo_dev
+    url: jdbc:mysql://172.21.20.243:3306/nupo_community_dev
     username: root
     password: 123456
     #oracle配置
